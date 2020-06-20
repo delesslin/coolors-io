@@ -1,0 +1,34 @@
+{
+  "name": "coolors-io",
+  "version": "1.0.0",
+  "description": "Parse a coolors URL into an array of hex strings",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "build": "tsc",
+    "example": "nodemon lib/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delesslin/coolors-io.git"
+  },
+  "keywords": [
+    "coolors",
+    "colors",
+    "hexadecimal",
+    "hex",
+    "js",
+    "javascript",
+    "url"
+  ],
+  "author": "delesslin <inc@delesslin.com> (http://delesslin.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delesslin/coolors-io/issues"
+  },
+  "homepage": "https://github.com/delesslin/coolors-io#readme",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
+}
