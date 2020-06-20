@@ -32,7 +32,9 @@ Notes:
 
 ### Getting Started
 
-`npm install coolors-io`
+```
+npm install coolors-io
+```
 
 ### coolors.parse
 
