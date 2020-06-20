@@ -30,6 +30,10 @@ Notes:
   - More than ten will return a 404 error
 - The order of hex values is significant in Coolors URLs and is preserved in parse and gen
 
+### Getting Started
+
+`npm install coolors-io`
+
 ### coolors.parse
 
 ```
