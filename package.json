@@ -14,8 +14,7 @@
     "precommit": "npm run add",
     "commit": "git commit -am $npm_config_msg",
     "version": "npm version patch -m $npm_config_msg",
-    "update": "npm run commit",
-    "publish": "npm run commit && git push origin master && npm publish"
+    "publish": "npm run commit && npm run version && git push origin master && npm publish"
   },
   "files": [
     "lib/*"
