@@ -4,11 +4,16 @@
   "description": "Parse a coolors URL into an array of hex strings",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
     "build": "tsc",
-    "example": "nodemon lib/example.js"
+    "example": "nodemon lib/example.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/delesslin/coolors-io.git"
@@ -29,6 +34,12 @@
   },
   "homepage": "https://github.com/delesslin/coolors-io#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.5"
   }
 }
