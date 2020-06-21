@@ -1,6 +1,6 @@
 {
   "name": "coolors-io",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Parse a coolorss URL into an array of hex strings",
   "main": "lib",
   "types": "lib/index.d.ts",
