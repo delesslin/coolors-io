@@ -9,8 +9,12 @@
     "build": "tsc",
     "example": "nodemon lib/example.js",
     "lint": "tslint -p tsconfig.json",
-    "precommit": "npm run lint",
-    "commit": "git add . && git commit -am $npm_config_msg"
+    "preadd": "npm run lint",
+    "add": "git add .",
+    "precommit": "npm run add",
+    "commit": "git commit -am $npm_config_msg",
+    "update": "npm run commit $npm_config_msg && npm version patch -m $npm_config_msg",
+    "publish": "npm run commit && git push origin master && npm publish"
   },
   "files": [
     "lib/*"
