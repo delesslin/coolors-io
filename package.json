@@ -10,7 +10,7 @@
     "example": "nodemon lib/example.js",
     "lint": "tslint -p tsconfig.json",
     "precommit": "npm run lint",
-    "commit": "git add . && git commit -am"
+    "commit": "git add . && git commit -am $npm_config_msg"
   },
   "files": [
     "lib/*"
