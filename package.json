@@ -1,7 +1,7 @@
 {
   "name": "coolors-io",
   "version": "1.1.0",
-  "description": "Parse a coolors URL into an array of hex strings",
+  "description": "Parse a coolorss URL into an array of hex strings",
   "main": "lib",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -12,9 +12,8 @@
     "preadd": "npm run lint",
     "add": "git add .",
     "precommit": "npm run add",
-    "commit": "git commit -am $npm_config_msg",
-    "version": "npm version patch -m $npm_config_msg",
-    "publish": "npm run commit && npm run version && git push origin master && npm publish"
+    "commit": "git commit -am",
+    "release": "release-it"
   },
   "files": [
     "lib/*"
@@ -39,6 +38,7 @@
   },
   "homepage": "https://github.com/delesslin/coolors-io#readme",
   "devDependencies": {
+    "release-it": "^13.6.3",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.5"
