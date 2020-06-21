@@ -9,6 +9,7 @@
     "build": "tsc",
     "example": "nodemon lib/example.js",
     "lint": "tslint -p tsconfig.json",
+    "precommit": "npm run lint",
     "commit": "git add . && git commit -am"
   },
   "files": [
