@@ -1,8 +1,8 @@
 {
   "name": "coolors-io",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Parse a coolors URL into an array of hex strings",
-  "main": "lib/index.js",
+  "main": "lib",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",

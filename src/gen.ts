@@ -7,15 +7,16 @@ const isValid = (str: string) => {
   return false;
 };
 
-export default async (arr: string[]) => {
+const gen = (arr: string[]): string => {
   // TODO: 🔧 Ensure arr isn't longer than 10
   try {
     return arr.reduce((acc, curr, i) => {
       // TODO: 🔧 handle strings that start with #
       // if curr contains # it will be returned without #, otherwise curr is simply returned
       const str = curr.split('#').pop()!;
-      console.log(str);
+
       if (!isValid(str)) throw new Error(`${str} is not a valid hex value`);
+
       if (i < arr.length - 1) {
         return `${acc}${str}-`;
       } else {
@@ -26,3 +27,5 @@ export default async (arr: string[]) => {
     return e;
   }
 };
+
+export default gen;

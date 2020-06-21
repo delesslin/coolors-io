@@ -39,7 +39,7 @@ npm install coolors-io
 ### coolors.parse
 
 ```
-  const { parse } = require(`coolors-io')
+  import { parse } from 'coolors-io'
 
   const exampleCoolor = 'https://coolors.co/243cf2-9e8f19-a81470-4553bf-4a5396'
 
@@ -51,7 +51,7 @@ npm install coolors-io
 ### coolors.gen
 
 ```
-  const { gen } = require(`coolors-io')
+  import { gen } from 'coolors-io'
 
   const exampleArray = ['feffef', '#ffeffe']
 
